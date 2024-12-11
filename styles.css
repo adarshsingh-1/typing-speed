@@ -1,0 +1,83 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #4caf50, #81c784, #009688);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+  }
+  
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .container {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    width: 500px; /* Increased size */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 28px;
+    color: #4caf50;
+    margin-bottom: 20px;
+  }
+  
+  #text-to-type {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px; /* Increased padding */
+    border-radius: 5px;
+    margin-bottom: 20px;
+    min-height: 80px; /* Adjusted height */
+  }
+  
+  #typing-area {
+    width: 90%; /* Adjusted width */
+    height: 120px; /* Increased height */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px; /* Increased padding */
+    font-size: 16px;
+    margin: 0 auto; /* Center the textarea within the container */
+  }
+  
+  .stats {
+    margin: 20px 0;
+    font-size: 16px; /* Slightly larger text */
+    color: #555;
+  }
+  
+  button {
+    padding: 12px 25px; /* Larger buttons */
+    margin: 10px; /* Added spacing */
+    background: linear-gradient(135deg, #4caf50, #388e3c);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: linear-gradient(135deg, #45a049, #2e7d32);
+  }
+  
+  button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+
+
+  
